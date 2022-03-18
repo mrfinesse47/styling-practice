@@ -84,8 +84,9 @@ input.first::placeholder {
   transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
 
-.second input:focus + .placeholder {
+.second input:focus + .placeholder,
+.second input:valid + .placeholder {
   top: 20px;
   font-size: 10px;
-  color: #222;
+  border-color: #222;
 }
