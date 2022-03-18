@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: salmon;
+}
+
+h2 {
+  text-align: center;
+}
+
+.inputs {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input.first {
+  border: none;
+  background: #f2f2f2;
+  margin: 10px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  outline: none;
+}
+
+input.first:focus::placeholder {
+  color: transparent;
+}
+
+/* very cool transition effect */
+input.first::placeholder {
+  color: pink;
+  transition: color 0.3s ease;
+}
